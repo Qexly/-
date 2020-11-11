@@ -1,21 +1,18 @@
 void main (){
 
-  Figure rect = Rectangle(20, 30);
-  rect.calculateArea();
+  int x = 20;
+  log(x);
+  x = 34;
+  log(x);
+  String name = "Tom";
+  log(name);
 }
-abstract class Figure {
-  void calculateArea(){
-    print("Not Implemented");
-  }
-}
-class Rectangle extends Figure{
+void log<T>(T a){
 
-  int width;
-  int height;
-  Rectangle(this.width, this.height);
-
-
+  // DateTime.now() - получает текущую дату и время
+  print("${DateTime.now()} a=$a, runtimeType: ${a.runtimeType}");
 }
 
 
-// /D d:\Учеба\Flutter\Dart progs
+// /D d:\Учеба\Learning\Flutter\Dart progs
+
